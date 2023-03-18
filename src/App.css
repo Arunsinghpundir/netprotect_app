@@ -1,0 +1,74 @@
+.row {
+  display: grid;
+  grid-template-columns: auto auto 2fr;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+#checkForm {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+  height: 10vh;
+}
+#checkForm label {
+  margin: 0;
+}
+.row div {
+  margin: 10px;
+}
+.country {
+  float: left;
+  width: 250px;
+}
+
+.country form {
+  float: left;
+}
+
+.country .country-input {
+  width: 100px;
+  margin: 10px;
+  height: 25px;
+  border-radius: 6px;
+}
+
+.average {
+  float: left;
+  width: 250px;
+}
+
+.horiz-bar {
+  margin: 10px;
+  display: inline-block;
+  border-radius: 0 5px 5px 0;
+  background-color: blue;
+  /* border: 1px solid; */
+}
+@media (min-width: 901px) {
+  .average,
+  .country,
+  .horiz-bar {
+    width: 250px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .average,
+  .country,
+  .horiz-bar {
+    width: 200px;
+  }
+}
+@media (max-width: 599px) {
+  .average,
+  .country,
+  .horiz-bar {
+    width: 300px;
+  }
+  .row {
+    grid-template-columns: auto;
+  }
+}
